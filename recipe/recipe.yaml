@@ -1,15 +1,15 @@
 schema_version: 1
 
 context:
-  version: "1.0.2"
+  version: "1.1.0"
 
 package:
   name: sigimax
   version: ${{ version }}
 
 source:
-  url: https://github.com/DataLab-Platform/SigimaX/releases/download/v${{ version }}/sigimax-${{ version }}.tar.gz
-  sha256: 0aa304e2a7924cee092fcdbc03c48f6123c361c5aee33da38e7e62f02c70908a
+  url: https://pypi.org/packages/source/s/sigimax/sigimax-${{ version }}.tar.gz
+  sha256: c5c9d250a96f7c910a3fe022825d36efe3861d3bf7a5afe2e8e3bfbbb5df83ce
 
 build:
   number: 0
@@ -23,11 +23,12 @@ requirements:
     - setuptools
   run:
     - python >=${{ python_min }}
-    - guidata >=3.15.0
-    - plotpy >=2.11.0
+    - guidata >=3.17.2
+    - plotpy >=2.12.1
+    - hdf5plugin >=4.0
     - qtpy >=1.9
     - psutil >=5.7
-    - sigima >=1.2.0
+    - sigima >=1.4.0
 
 tests:
   # For noarch Python packages, conda-forge checks both the minimum and the
