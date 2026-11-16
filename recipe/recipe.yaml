@@ -23,12 +23,12 @@ requirements:
     - setuptools
   run:
     - python >=${{ python_min }}
-    - guidata >=3.17.2
+    - guidata >=3.17.3
     - plotpy >=2.12.1
     - hdf5plugin >=4.0
     - qtpy >=1.9
     - psutil >=5.7
-    - sigima >=1.4.0
+    - sigima >=1.4.1
 
 tests:
   # For noarch Python packages, conda-forge checks both the minimum and the
