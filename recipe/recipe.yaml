@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.1.0"
+  version: "1.1.1"
 
 package:
   name: sigimax
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/s/sigimax/sigimax-${{ version }}.tar.gz
-  sha256: c5c9d250a96f7c910a3fe022825d36efe3861d3bf7a5afe2e8e3bfbbb5df83ce
+  sha256: d3eb9e27957c94bd1e69c439cb96eb77f919b79275ce795bd0c2f949a1637517
 
 build:
   number: 0
